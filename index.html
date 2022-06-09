@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffee Counter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> -->
+<link rel="stylesheet" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="lightbox/dist/css/lightbox.css" rel="stylesheet"> 
+<script>
+  $('p').hide();
+
+  $('#switch-lang').click(function() {
+    $('[lang="es"]').toggle();
+    $('[lang="en"]').toggle();
+  });
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li class="">
+        <a href="#about" class=""><span lang="hu">COFFEE COUNTER</span> <span lang="en">ABOUT US</span></a>
+      </li>
+      <li class="">
+        <a href="#whycc" class="">HÍVJ MINKET</a>
+      </li>
+      <li class="">
+        <a href="#galery" class="">CSEKKOLD LE</a>
+      </li>
+      <li class="">
+        <a href="#t">ENGLISH</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="background-div">
+    <img src="images/cc-sunset.JPG" class="background">
+    <h1 class="title">KÁVÉ AHOL SZERETNÉD</h1>
+    <a class="bookEvent" href="#book">AJÁNLATOT KÉREK</a>
+  </div>
+  <div class="content">
+    <div id="about" class="section">
+      <h4 class="center">PÁR SZÓ RÓLUNK</h4>
+      <p> A Coffee Counter egy kávés pult, amivel magas szintű szolgáltatást tudunk nyújtani bármilyen rendezvényen. 
+          Egy mobil pult, ami bárhol elhelyezhető egy adott eseményen.
+          A legjobb minőségű újhullámos kávékat biztosítjuk a rendezvényeken a megrendelőnk vendégeinek. 
+          A szolgáltatásunk ad egy plusz hangulatot a céges rendezvényeknek vagy bemutatókon.
+          Képzéseken vagy találkozókon kis hely igénnyel remek felfrissülő lehetőséget ad.</p>
+      <p>Lényege a szolgáltatásunknak a kávé biztosítása rendezvényeken, mindemellett a lehető legnagyobb ügyfélközpontúság.</p>
+    </div>
+  </div>
+    <div class="background-div">
+      <img src="images/LandL_ESK-5.jpg" class="background left">
+      <h1 class="title"> Lorum </h1>
+    </div>
+  <div class="content">
+    <div id="galery" class="section">
+      <h4 style="margin-bottom: 1rem;">PÁR KÉP RÓLUNK:</h4>
+      <div class="center">  
+        <div class="galery">
+          
+          <div class="center"><a class="portfolio-box" href="images/DSC00407.png" data-lightbox="bigger">
+            <img src="images/DSC00407.png" alt="papa">
+          </a></div>
+          <div class="center"><a class="portfolio-box" href="images/DSC00441.png" data-lightbox="bigger">
+            <img src="images/DSC00441.png" alt="papa">
+          </a></div>
+          <div class="center"><a class="portfolio-box" href="images/DSC00479.png" data-lightbox="bigger">
+            <img src="images/DSC00479.png" alt="papa">
+          </a></div>
+          <div class="center"><a class="portfolio-box" href="images/LandL_ESK-21.jpg" data-lightbox="bigger">
+            <img src="images/LandL_ESK-21.jpg" alt="papa">
+          </a></div>
+          <div class="center"><a class="portfolio-box" href="images/Kriszesk3-182.jpg" data-lightbox="bigger">
+            <img src="images/Kriszesk3-182.jpg" alt="papa">
+          </a></div>
+          <div class="center"><a class="portfolio-box" href="images/DSC016492.jpg" data-lightbox="bigger">
+            <img src="images/DSC016492.jpg" alt="papa">
+          </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background-div">
+    <img src="images/krisz-eskuvo.jpg" class="background little-left">
+    <h1 class="title"> Lorum </h1>
+  </div>
+  <div class="content">
+    <div id="book" class="section">
+      <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="sevenHundredCenter">
+          <h4 ><span>AJÁNLAT KÉRÉS</span></h4>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="" type="text" placeholder="Név" required name="Név"></p>
+            <p><input type="text" placeholder="Telefonszám" required name="Telefonszám"></p>
+            <p><input type="text" placeholder="Email cím" required name="Email cím"></p>
+            <p><input type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+            <p><input type="number" placeholder="Létszám" required name="Létszám"></p>
+            <p><input type="text" placeholder="Egyéb kérés" required name="Egyéb kérés"></p>
+            <p><button type="submit">KÜLDÖM</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div style="width: fit-content;margin: auto;">
+      <div id="whycc" class="section">
+        <h4>A Coffee Counter ideális választás:</h4>
+        <ul>
+          <li>Céges rendezvények</li>
+          <li>Esküvők</li>
+          <li>Előadások, kiállítások</li>
+          <li>És a te elképzelésed ahova szeretnéd a pultot</li>
+        </ul>
+        <span>
+            Hívj minket: 06306169442 DSC01378.JPG
+        </span>
+      </div>
+      <a href="mailto:coffeecounterinfo@gmail.com" target="_blank"><img src="images/mail.png" alt="mail" style="max-height: 1rem;"></a>
+      <a href="https://www.instagram.com/Coffee_counter_/" target="_blank"><img src="images/insta.png" alt="insta" style="max-height: 1rem;"></a>
+    </div>
+  </footer>
+
+  <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+</div>
+</body>
+</html>

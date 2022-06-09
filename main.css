@@ -1,15 +1,235 @@
-body, html {
+:root {
+    --nav-height: 4rem;
+    --button-link-height: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
     height: 100%;
     font-family: "Inconsolata", sans-serif;
 }
 
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/imageSunset.jpeg");
-    min-height: 75%;
-}
-
 .menu {
     display: none;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: color .5s, font-size .5s;
+    -moz-transition: color .5s, font-size .5s;
+    -o-transition: color .5s, font-size .5s;
+    transition: color .5s, font-size .5s;
+}
+
+li a:hover {
+   font-size: large;
+   text-decoration: underline;
+}
+
+li :lang(en) {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    border: 1px solid #ccc!important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+h4 {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    width: fit-content;
+    margin: auto;
+}
+
+.navbar {
+    height: var(--nav-height);
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.navbar ul {
+    display: none;
+}
+
+.navbar ul li {
+    display: block;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    scroll-behavior: smooth;
+}
+
+.background-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 95%;
+    margin: 7rem auto;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    top: 0;
+    border-radius: 0.5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.left {
+    object-position: left;
+}
+
+.little-left {
+    object-position: 30% 70%;
+}
+
+.title {
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    transform: translateZ(-2px) scale(1.2);
+}
+
+.bookEvent {
+    display: flex;
+    height: var(--button-link-height);
+    background-color: #FFF;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 5px black;
+    transform: translateZ(-2px) scale(1.2);
+    margin-top: 5rem;
+    font: bold;
+    transition    : all 0.2s ease-in-out; 
+    -o-transition       : all 0.2s ease-in-out;
+    -moz-transition     : all 0.3s ease-in-out;
+    -webkit-transition  : all 0.3s ease-in-out;
+}
+
+.bookEvent:hover  {
+    background-color: rgba(255, 255, 255, 0.607);
+    transform: scale(1.1);
+}
+
+.content {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.galery {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.sevenHundredCenter {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galery img {
+    width: 336px;
+    height: 600px;
+    object-fit: cover;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+.footer {
+    background-color: #ccc;
+    min-height: 10rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 1300px) {
+    .section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .galery {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 4.5rem;
+    }
+
+    .section {
+        padding: 5rem;
+    }
+
+    .galery {
+        grid-template-columns: auto auto;
+    }
+
+    .navbar ul {
+        width: 60%;
+    }
+    
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .galery {
+        grid-template-columns: auto auto;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
 }
